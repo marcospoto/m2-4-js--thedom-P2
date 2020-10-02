@@ -10,6 +10,12 @@
 
 const redacted = (arr) => {
   // Insert missing solution please
+  arr.forEach((item, i) => {
+    if (typeof item === "string") {
+      arr[i] = "redacted";
+    }
+  });
+  return arr;
 };
 
 // Part 2 - Test

@@ -12,6 +12,17 @@
 
 const count = (arr, key) => {
   // Insert missing solution please
+  // if (typeof obj !== "object") {
+  //   return arr;
+  // }
+  let total = 0;
+  arr.forEach((item) => {
+    if (typeof item.amount === "number") {
+      total = total + item.amount;
+    }
+  });
+
+  return total;
 };
 
 // Part 2 - Test

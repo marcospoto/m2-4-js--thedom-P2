@@ -16,6 +16,14 @@
 
 const insert = (arr, obj) => {
   // Insert missing solution please
+  if (typeof obj !== "object") {
+    return arr;
+  }
+  arr.forEach((item) => {
+    item.isAvailable = false;
+  });
+
+  return arr;
 };
 
 // Part 2 - Test

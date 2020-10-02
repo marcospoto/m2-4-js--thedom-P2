@@ -9,6 +9,17 @@
 
 const addNumbers = (...nums) => {
   // Insert missing solution please
+  let total;
+
+  nums.forEach((num) => {
+    if (typeof num === "number") {
+      if (total == undefined) total = 0;
+
+      total = total + Math.pow(num, 2);
+    }
+  });
+
+  return total;
 };
 
 // Part 2 - Test

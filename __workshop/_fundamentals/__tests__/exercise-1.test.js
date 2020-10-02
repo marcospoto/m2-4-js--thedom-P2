@@ -11,6 +11,15 @@ test("Exercise 1", () => {
     "5",
   ]);
   // add more tests here...
+  expect(
+    convertToString(["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"])
+  ).toStrictEqual(["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]);
+  expect(convertToString([12, 23, 34, 45])).toStrictEqual([
+    "12",
+    "23",
+    "34",
+    "45",
+  ]);
 });
 
 // More info on jest expect: https://jestjs.io/docs/en/expect
