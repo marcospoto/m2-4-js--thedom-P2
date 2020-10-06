@@ -29,7 +29,6 @@ for (let i = 0; i < FROGS; i++) {
   racers.push(frogstable[i]);
 }
 
-// console.log racers
 //console.log(racers);
 
 // Exercise 1.3 - Line 'em up!
@@ -43,12 +42,11 @@ function lineEmUp(frog, index) {
   frog.progress = 0;
 }
 function racingFrog(racer) {
-  //console.log("racingFrog() ", racer);
+  // const hopLength = Math.floor(((Math.random() * 100) / trackWidth) * 100);
   const trackWidth = track.offsetWidth;
-  //const hopLength = Math.floor(((Math.random() * 100) / trackWidth) * 100);
-  console.log("racingFrog() ", racer);
+  // console.log("racingFrog() ", racer);
   const frog = document.getElementById(racer.lane);
-  console.log(frog);
+  // console.log(frog);
   let hop = setInterval(function () {
     const hopLength = Math.floor(((Math.random() * 100) / trackWidth) * 100);
     // add hopLength to progress
@@ -61,7 +59,7 @@ function racingFrog(racer) {
     if (racer.progress >= 100) {
       racer.progress = 100;
       clearInterval(hop);
-      console.log(racer.name + "has won!");
+      // console.log(racer.name + "has won!");
     }
   }, Math.random() * 2000);
 }

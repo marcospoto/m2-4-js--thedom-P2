@@ -15,6 +15,9 @@
 
 const addValues = (arr, obj) => {
   // Insert missing solution please
+  return arr.map((element) => {
+    return { ...element, ...obj };
+  });
 };
 
 // Part 2 - Test
